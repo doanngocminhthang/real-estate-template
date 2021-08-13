@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Tailwind CSS Demo</title>
 </head>
 
 <body>
     <div class=" bg-white  h-24 flex justify-center ">
-        <div class=""><img class="w-56" src="css/photo/logo.png" alt=""></div>
-        <ul class="flex ml-auto text-lg uppercase pt-9 text-gray-700 ">
+        <div class="min-w-max"><img class="w-56" src="css/photo/logo.png" alt=""></div>
+        <ul class="flex ml-auto text-lg uppercase pt-9 text-gray-700 min-w-max ">
             <li class="mr-10 ">Trang chủ</li>
             <li class="mr-10">Giới thiệu</li>
             <li class="mr-10">Vị trí</li>
@@ -29,19 +30,20 @@
         <img src="css/photo/batdongsan.jpg" class="h-700 w-full" alt="">
     </div>
     <div class="mr-3 ml-3 bg-green-600 h-700 relative mt-14">
-        <img src="css/photo/duanbatdongsan.jpg" alt="" class="z-10 h-450 w-5/6 ml-40 mt-52 absolute ">
-        <div class="z-20 bg-white h-450 w-1/3 absolute rounded-lg ml-42 mt-36">
-            <h2 class="text-black font-sans text-3xl">Kiệt tác vàng ven sông</h2>
-            <p class="mt-5">Từ bao đời nay, sông Sài Gòn đã là tuyến giao thông huyết mạch, giữ dấu ấn quan trọng trong văn hóa Sài
-                Gòn - Gia Định</p>
-            <p>Và nay, Sài Gòn là một chứng nhân cho sự phát triển phồn vinh với hàng loạt công trình ven sông - niềm tự
-                hào của thành phố. Được sông Sài Gòn ôm trọn 3 mặt, khu đô thị Vạn Phúc đã kiến tạo nên những không gian
+        <img src="css/photo/duanbatdongsan.jpg" alt="" class="z-10 h-450 w-5/6 absolute" style="left:10%; top:27%;">
+        <div class="z-20 bg-white h-450 m-w-33 rounded-lg absolute  py-8 px-12 text-center" style="left:35%; top:20%; ">
+            <h2 class="text-black font-bold text-xl  uppercase ">Kiệt tác vàng ven sông</h2>
+            <p class="mt-5 text-xs text-center">Từ bao đời nay, sông Sài Gòn đã là tuyến giao thông huyết mạch, giữ dấu ấn quan trọng trong văn hóa Sài
+                Gòn - Gia Định.</p>
+            <p class="mt-5 text-xs">Và nay, Sài Gòn là một chứng nhân cho sự phát triển phồn vinh với hàng loạt công trình ven sông - niềm tự
+                hào của thành phố. Được sông Sài Gòn ôm trọn 3 mặt, <span class="font-bold">khu đô thị Vạn Phúc</span> đã kiến tạo nên những không gian
                 sống đẳng cấp, những tiện nghi hoàn hảo làm nên những giá trị mới cho dòng sông lịch sử mà không hề mất
-                đi sự huyền ảo vốn có</p>
-            <p>Tổng diện tích</p>
-            <span>198 ha</span>
-            <a href=""><span>Xem thêm</span></a>
+                đi sự huyền ảo vốn có.</p>
+            <p class="mt-5 text-xs">Tổng diện tích</p>
+            <p class="mt-5 text-5xl font-semibold">198 <span class="text-sm font-normal">ha</span></p>
+            <a href="#" class="" ><button class="w-32 h-8 font-bold rounded-2xl mt-5" style="border: 1px solid #70A78A ;color: #70A78A; ">Xem thêm</button></a>
         </div>
+        <div class="fa-building2 absolute z-30"><i class="fa fa-building  z-30 text-center  pt-4"  aria-hidden="true"></i></div>
     </div>
 
 </body>
