@@ -192421,15 +192421,37 @@ video {
 }
 .input3{
   margin-left: 40rem;
-  margin-top: 14rem;
+  margin-top: 18rem;
   border-radius: 15px;
   opacity: 0.8;
   padding: 10px;
 }
 .input4{
-  margin-left: 40rem;
-  margin-top: 14rem;
+  margin-left: 61rem;
+  margin-top: 18rem;
   border-radius: 15px;
   opacity: 0.8;
   padding: 10px;
+}
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+#text-area1{
+  margin-left: 40rem;
+  margin-top: 22rem;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 10px;
+  width: 41rem;
+  height: 10rem;
+}
+.button1{
+  margin-left: 40rem;
+  margin-top: 22rem;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 10px;
+  width: 20rem;
+  height: 3rem;
+  background-color: #739A7C;
 }
