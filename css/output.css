@@ -685,7 +685,9 @@ video {
   clip: auto;
   white-space: normal;
 }
-
+.h-500{
+  height: 500px;
+}
 .pointer-events-none {
   pointer-events: none;
 }
@@ -5695,6 +5697,15 @@ video {
   height: 2px;
   background-color: #70a78a;
   margin-top: 5px;
+}
+.headtitle3:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #919994;
+  margin-top: 15px;
+  margin-left: 30%;
 }
 .h-700 {
   height: 700px;
@@ -21880,13 +21891,13 @@ video {
   display: block;
   position: absolute;
   left: 50%;
-  bottom: -20px;
   transform: translate(-50%,50%);
-  background-image: url(css/photo/logo.jpg);
+  background-image: url(/css/photo/iconbig.svg);
   background-size: cover;
   width: 45px;
   height: 45px;
   z-index: 1;
+  bottom: 74%;
 }
 .title-icon:after {
   content: '';
@@ -21894,10 +21905,55 @@ video {
   display: block;
   position: absolute;
   left: 50%;
-  bottom: -20px;
   width: 30%;
   height: 5px;
-  background: #44bca7;
+  background: linear-gradient(to right,white,#44bca7,white);
+}
+.title-icon2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
+  background-image: url(/css/photo/iconbig.svg);
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  bottom: 44%;
+}
+.title-icon2:after {
+  content: '';
+  transform: translate(-50%,50%);
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 30%;
+  height: 5px;
+  background: linear-gradient(to right,white,#44bca7,white);
+}
+.title-icon3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
+  background-image: url(/css/photo/iconbig.svg);
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  bottom: 43%;
+}
+.title-icon3:after {
+  content: '';
+  transform: translate(-50%,50%);
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 30%;
+  height: 5px;
+  background: linear-gradient(to right,white,#44bca7,white);
 }
 .p-20 {
   padding: 5rem;
@@ -192341,4 +192397,36 @@ video {
   .\32xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+.header-form{
+  margin-left: 48rem;
+  margin-top: 10.5rem;
+}
+.input1{
+  margin-left: 40rem;
+  margin-top: 14rem;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 10px;
+}
+.input2{
+  margin-left: 40rem;
+  margin-top: 14rem;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 10px;
+}
+.input3{
+  margin-left: 40rem;
+  margin-top: 14rem;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 10px;
+}
+.input4{
+  margin-left: 40rem;
+  margin-top: 14rem;
+  border-radius: 15px;
+  opacity: 0.8;
+  padding: 10px;
 }
