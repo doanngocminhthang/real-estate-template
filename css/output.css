@@ -21908,6 +21908,7 @@ video {
   width: 30%;
   height: 5px;
   background: linear-gradient(to right,white,#44bca7,white);
+<<<<<<< HEAD
 }
 .title-icon2:before {
   content: '';
@@ -21954,6 +21955,8 @@ video {
   width: 30%;
   height: 5px;
   background: linear-gradient(to right,white,#44bca7,white);
+=======
+>>>>>>> 49b938124383cf1932f5f1f6f43f9096463670c7
 }
 .p-20 {
   padding: 5rem;
@@ -192410,7 +192413,7 @@ video {
   padding: 10px;
 }
 .input2{
-  margin-left: 40rem;
+  margin-left: 61rem;
   margin-top: 14rem;
   border-radius: 15px;
   opacity: 0.8;
