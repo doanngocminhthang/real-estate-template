@@ -21897,7 +21897,7 @@ video {
   width: 45px;
   height: 45px;
   z-index: 1;
-  bottom: 74%;
+  bottom: 78%;
 }
 .title-icon:after {
   content: '';
@@ -21908,7 +21908,6 @@ video {
   width: 30%;
   height: 5px;
   background: linear-gradient(to right,white,#44bca7,white);
-<<<<<<< HEAD
 }
 .title-icon2:before {
   content: '';
@@ -21955,8 +21954,6 @@ video {
   width: 30%;
   height: 5px;
   background: linear-gradient(to right,white,#44bca7,white);
-=======
->>>>>>> 49b938124383cf1932f5f1f6f43f9096463670c7
 }
 .p-20 {
   padding: 5rem;
@@ -192402,32 +192399,32 @@ video {
   }
 }
 .header-form{
-  margin-left: 48rem;
+  margin-left: 34rem;
   margin-top: 10.5rem;
 }
 .input1{
-  margin-left: 40rem;
+  margin-left: 28rem;
   margin-top: 14rem;
   border-radius: 15px;
   opacity: 0.8;
   padding: 10px;
 }
 .input2{
-  margin-left: 61rem;
+  margin-left: 49rem;
   margin-top: 14rem;
   border-radius: 15px;
   opacity: 0.8;
   padding: 10px;
 }
 .input3{
-  margin-left: 40rem;
+  margin-left: 28rem;
   margin-top: 18rem;
   border-radius: 15px;
   opacity: 0.8;
   padding: 10px;
 }
 .input4{
-  margin-left: 61rem;
+  margin-left: 49rem;
   margin-top: 18rem;
   border-radius: 15px;
   opacity: 0.8;
@@ -192437,7 +192434,7 @@ input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
 }
 #text-area1{
-  margin-left: 40rem;
+  margin-left: 28rem;
   margin-top: 22rem;
   border-radius: 15px;
   opacity: 0.8;
@@ -192446,7 +192443,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 10rem;
 }
 .button1{
-  margin-left: 50rem;
+  margin-left: 39rem;
     margin-top: 1rem;
   border-radius: 15px;
   opacity: 0.8;
