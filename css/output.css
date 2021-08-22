@@ -21897,7 +21897,7 @@ video {
   width: 45px;
   height: 45px;
   z-index: 1;
-  bottom: 74%;
+  bottom: 43%;
 }
 .title-icon:after {
   content: '';
@@ -192433,22 +192433,12 @@ video {
 input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
 }
-#text-area1{
-  margin-left: 30rem;
-  margin-top: 22rem;
-  border-radius: 15px;
-  opacity: 0.8;
-  padding: 10px;
-  width: 41rem;
-  height: 10rem;
+.left-035{
+  left:35%;
 }
-.button1{
-  margin-left: 40rem;
-    margin-top: 1rem;
-  border-radius: 15px;
-  opacity: 0.8;
-  padding: 10px;
-  width: 20rem;
-  height: 3rem;
-  background-color: #739A7C;
+.top-020{
+top:20%;
+}
+.h-500{
+  height:500px;
 }

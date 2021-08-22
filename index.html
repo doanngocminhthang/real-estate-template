@@ -12,31 +12,71 @@
 </head>
 
 <body>
-    <div class=" bg-white fixed h-26 flex justify-center w-full z-50 ">
-        <div class="min-w-max"><img class="w-56 h-50" src="css/photo/logo.png" alt=""></div>
-        <ul class="flex ml-auto text-lg uppercase pt-9 text-gray-700 min-w-max ">
-            <li class="mr-10 ">Trang chủ</li>
-            <li class="mr-10">Giới thiệu</li>
-            <li class="mr-10">Vị trí</li>
-            <li class="mr-10">Tiện ích</li>
-            <li class="mr-10">Mẫu nhà</li>
-            <li class="mr-10">Tiến độ</li>
-            <li class="mr-10 headtitle">Tin tức</li>
-            <li class="mr-10">Video</li>
-            <li class="mr-6">Đăng ký tham quan</li>
+    <div class=" max-w-6xl mx-auto px-4 flex justify-between ">
+        <div class="flex space-x-7">
+            <div class="">
+                <a class="py-4 flex px-2 items-center ">
+                    <img class="h-24 w-60 mr-2" src="css/photo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-1 ">
+                <a class=" py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Trang chủ</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300 ">Giới thiệu</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Vị trí</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Tiện ích</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Mẫu nhà</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Tiến độ</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Tin tức</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Video</a>
+                <a class=" py-4 px-2 hover:text-green-500 transition duration-300">Đăng ký tham quan</a>
+            </div>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+                <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="hidden mobile-menu">
+        <ul class="">
+            <li class="active"><a href="index.html"
+                    class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Trang chủ</a></li>
+            <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Giới
+                    thiệu</a></li>
+            <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Vị trí</a>
+            </li>
+            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tiện ích
+                </a></li>
+            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Mẫu nhà
+                </a></li>
+            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tiến độ
+                </a></li>
+            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tin tức
+                </a></li>
+            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Video
+                </a></li>
+            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Đăng ký
+                    tham quan
+                </a></li>
         </ul>
     </div>
-    <div class="" style="">
+    <div class="">
         <img src="css/photo/batdongsan.jpg" class="h-700 w-full" alt="">
     </div>
-    <div class="mr-3 ml-3 bg-green-600 h-700 relative mt-14">
-        <img src="css/photo/duanbatdongsan.jpg" alt="" class="z-10 h-450 w-5/6 absolute" style="left:10%; top:27%;">
-        <div class="z-20 bg-white h-450 m-w-33 rounded-lg absolute  py-8 px-12 text-center" style="left:35%; top:20%; ">
-            <h2 class="text-black font-bold text-xl  uppercase ">Kiệt tác vàng ven sông</h2>
-            <p class="mt-5 text-xs text-center">Từ bao đời nay, sông Sài Gòn đã là tuyến giao thông huyết mạch, giữ dấu
+    <div class=" mr-3 ml-3 md:bg-green-600 md:h-700 h-500 relative mt-14">
+        <img src="css/photo/duanbatdongsan.jpg" alt="" class="md:block hidden z-10 h-450 w-5/6 absolute" style="left:10%; top:27%;">
+        <div class="z-20 bg-white h-450 md:m-w-33 rounded-lg md:absolute md:top-020 md:left-035 py-8 px-12 text-center "
+            >
+            <h2 class="text-black font-bold text-xl uppercase  ">Kiệt tác vàng ven sông</h2>
+            <p class="mt-5 md:text-xs text-base text-center">Từ bao đời nay, sông Sài Gòn đã là tuyến giao thông huyết mạch, giữ dấu
                 ấn quan trọng trong văn hóa Sài
                 Gòn - Gia Định.</p>
-            <p class="mt-5 text-xs">Và nay, Sài Gòn là một chứng nhân cho sự phát triển phồn vinh với hàng loạt công
+            <p class="mt-5 text-base md:text-xs">Và nay, Sài Gòn là một chứng nhân cho sự phát triển phồn vinh với hàng loạt công
                 trình ven sông - niềm tự
                 hào của thành phố. Được sông Sài Gòn ôm trọn 3 mặt, <span class="font-bold">khu đô thị Vạn Phúc</span>
                 đã kiến tạo nên những không gian
@@ -50,8 +90,8 @@
         <div class="fa-building2 absolute z-30"><i class="fa fa-building  z-30 text-center  pt-4"
                 aria-hidden="true"></i></div>
     </div>
-    <div class="flex w-full h-410 mt-12 ">
-        <div class="w-1/2 mt-12 p-16">
+    <div class="md:flex md:w-full h-410 mt-12 ">
+        <div class="md:w-1/2 w-full mt-12 p-16">
             <div class="flex text-2xl p" style="color: #70a78a;">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <h2 class="uppercase ml-2 text-black font-semibold">Vị trí</h2>
@@ -66,89 +106,91 @@
             <a href="#" class=""><button class="w-32 h-8 font-bold rounded-2xl mt-5"
                     style="border: 1px solid #70A78A ;color: #70A78A; ">Xem thêm</button></a>
         </div>
-        <div class="w-1/2">
-            <img class="h-400 w-full" src="css/photo/van-phuc-bando.jpg" alt="">
+        <div class="md:w-1/2 md:flex w-full block hidden ">
+            <img class="md:h-400 w-full" src="css/photo/van-phuc-bando.jpg" alt="">
         </div>
     </div>
-    <div class="mt-20 ">
+    <div class="md:mt-20">
         <div class="relative">
             <h2 class="uppercase ml-2 text-black font-semibold text-2xl text-center">Tiện ích</h2>
             <div class="title-icon w-full h-10 mt-3"></div>
-            <p class="text-center mt-10">Với thiết kế chuẩn mực và không gian mở sáng tạo, dự án Vạn Phúc là sự kết hợp
-                hài hòa của hai mặt cuộc sống
-                - một năng động, một tĩnh lặng</p>
-            <p class="text-center mt-5">Nơi đây sẽ đem đến không khí một không gian sống, làm việc, giải trí thời
-                thượng, mà còn là không gian sống
-                tuyệt vời cho con trẻ, được hòa mình vào thiên nhiên, tự do phát triển cả về trí tuệ và thể chất, cũng
-                như
-                kĩ năng sống</p>
         </div>
-        <div class="flex">
-            <div>
-                <img src="css/photo/phongcanh1.jpg" alt="" class="px-20 py-10">
-                <p class="px-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
-                    culpa unde consequatur
-                    nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
-                    exercitationem eum repellat?</p>
-            </div>
-            <div class="">
-                <img src="css/photo/phongcanh2.jpg" alt="" class="p-20 py-10">
-                <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
-                    culpa unde consequatur
-                    nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
-                    exercitationem eum repellat?</p>
-            </div>
-            <div>
-                <img src="css/photo/phongcanh3.jpg" alt="" class="p-20 py-10">
-                <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
-                    culpa unde consequatur
-                    nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
-                    exercitationem eum repellat?</p>
-            </div>
+        <div class="text-center p-8">
+        <p>Với thiết kế chuẩn mực và không gian mở sáng tạo, dự án Vạn Phúc là sự kết hợp
+            hài hòa của hai mặt cuộc sống
+            - một năng động, một tĩnh lặng</p>
+        <p>Nơi đây sẽ đem đến không khí một không gian sống, làm việc, giải trí thời
+            thượng, mà còn là không gian sống
+            tuyệt vời cho con trẻ, được hòa mình vào thiên nhiên, tự do phát triển cả về trí tuệ và thể chất, cũng
+            như kĩ năng sống</p>
         </div>
-        <div class="flex">
-            <div>
-                <img src="css/photo/phongcanh4.jpg" alt="" class="px-20 py-10">
-                <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
-                    culpa unde consequatur
-                    nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
-                    exercitationem eum repellat?</p>
-            </div>
-            <div class="">
-                <img src="css/photo/phongcanh5.jpg" alt="" class="p-20 py-10">
-                <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
-                    culpa unde consequatur
-                    nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
-                    exercitationem eum repellat?</p>
-            </div>
-            <div>
-                <img src="css/photo/phongcanh6.jpg" alt="" class="p-20 py-10">
-                <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
-                    culpa unde consequatur
-                    nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
-                    exercitationem eum repellat?</p>
-            </div>
+    </div>
+    <div class="md:flex">
+        <div class="block">
+            <img src="css/photo/phongcanh1.jpg" alt="" class="px-20 py-10">
+            <p class="px-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
+                culpa unde consequatur
+                nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
+                exercitationem eum repellat?</p>
         </div>
+        <div class="">
+            <img src="css/photo/phongcanh2.jpg" alt="" class="p-20 py-10">
+            <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
+                culpa unde consequatur
+                nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
+                exercitationem eum repellat?</p>
+        </div>
+        <div>
+            <img src="css/photo/phongcanh3.jpg" alt="" class="p-20 py-10">
+            <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
+                culpa unde consequatur
+                nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
+                exercitationem eum repellat?</p>
+        </div>
+    </div>
+    <div class="md:flex">
+        <div class="">
+            <img src="css/photo/phongcanh4.jpg" alt="" class="px-20 py-10">
+            <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
+                culpa unde consequatur
+                nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
+                exercitationem eum repellat?</p>
+        </div>
+        <div class="">
+            <img src="css/photo/phongcanh5.jpg" alt="" class="p-20 py-10">
+            <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
+                culpa unde consequatur
+                nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
+                exercitationem eum repellat?</p>
+        </div>
+        <div>
+            <img src="css/photo/phongcanh6.jpg" alt="" class="p-20 py-10">
+            <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
+                culpa unde consequatur
+                nobis molestiae officiis nisi veniam enim eos, necessitatibus laboriosam iste totam natus qui
+                exercitationem eum repellat?</p>
+        </div>
+    </div>
     </div>
     <div class="mt-20">
         <div class="relative">
             <h2 class="uppercase ml-2 text-black font-semibold text-2xl text-center">Mẫu nhà</h2>
             <div class="title-icon2 w-full h-10 mt-3"></div>
         </div>
-        <div class="mr-3 ml-3 bg-green-600 h-700 relative mt-14">
-            <div class="flex ml-4 mr-4 mt-28 absolute" style="border: 1px solid white;">
-                <div class="w-3/5"><img class="h-500 w-full" src="css/photo/maunha.jpg" alt=""></div>
-                <div class="w-2/5 text-white p-20 text-4xl">
-                    <i class="fa fa-home inline-block w-14 h-14 " aria-hidden="true"></i>
-                    <h3 class="inline-block font-semibold text-3xl uppercase headtitle3">Nhà phố thương mại hiện đại
+        <div class="md:mr-3 md:ml-3 md:bg-green-600 md:h-700 md:relative md:mt-14">
+            <div class="md:flex" >
+                <div class="md:w-3/5 md:p-10 px-10"><img class="h-500 w-full" src="css/photo/maunha.jpg" alt=""></div>
+                <div class="md:w-2/5 md:p-20 md:text-4xl md:text-white px-10 text-base">
+                    <i class="fa fa-home inline-block md:w-14 w-10 md:h-14 text-xl p-10" aria-hidden="true"></i>
+                    <h3 class="inline-block md:font-semibold md:text-3xl uppercase headtitle3 text-2xl">Nhà phố thương mại hiện đại
                     </h3>
-                    <p class="text-lg text-gray-300 mt-3">Tọa lạc mặt tiền những tuyến đường đẹp nhất nối liền Quốc lộ
+                    <p class="md:text-lg md:text-gray-300 mt-3 ">Tọa lạc mặt tiền những tuyến đường đẹp nhất nối liền Quốc lộ
                         13 và trung tâm Van Phuc City, nhà
                         phố thương mại hiện đại là một sự kết hợp tuyệt vời giữa mô hình vừa ở vừa kinh doanh, mang lại
                         4 giá trị trong 1 căn nhà : Tích lũy tài sản - Đầu tư sinh lợi - Kinh doanh cho thuê - An cư lạc
                         nghiệp....</p>
                     <div class="flex mt-5">
-                        <div class="flex mr-10 relative w-36" style="min-width: 144px;">
+                        <div class="flex mr-10 relative md:w-36 text-base" style="min-width: 144px;">
                             <i class="fas fa-home mr-4"></i>
                             <p class="uppercase text-base absolute bottom-0 left-16">Hiện đại</p>
                         </div>
@@ -161,27 +203,27 @@
                             <p class="uppercase text-base absolute bottom-0 left-16">231</p>
                         </div>
                     </div>
-                    <a href="#" class="flex  "><button
+                    <a href="#" class="flex"><button
                             class=" w-28 h-8 font-bold rounded-2xl mt-5 text-base ml-auto text-white "
                             style="border: 1px solid white ;">Xem thêm</button></a>
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="relative mt-20">
         <div class="relative mt-20">
             <h2 class="uppercase ml-2 text-black font-semibold text-2xl text-center">Tiến độ</h2>
             <div class="title-icon3 w-full h-10 mt-3"></div>
         </div>
-        <div class="mt-6 ">
+        <div class="mt-6 px-4">
             <ul class="flex justify-center font-serif">
-                <li class="mr-4">Tháng 5/2018</li>
-                <li class="mr-4">Tháng 6/2018</li>
-                <li class="mr-4">Tháng 7/2018</li>
-                <li class="mr-4">Tháng 8/2018</li>
-                <li class="mr-4">Tháng 9/2018</li>
-                <li class="mr-4">Tháng 10/2018</li>
-                <li class="mr-4">Tháng 11/2018</li>
+                <li class="md:mr-4 ">Tháng 5/2018</li>
+                <li class="md:mr-4 ">Tháng 6/2018</li>
+                <li class="md:mr-4">Tháng 7/2018</li>
+                <li class="md:mr-4">Tháng 8/2018</li>
+                <li class="md:mr-4">Tháng 9/2018</li>
+                <li class="md:mr-4">Tháng 10/2018</li>
+                <li class="md:mr-4">Tháng 11/2018</li>
             </ul>
         </div>
         <div class=""><img class="w-4/5 h-700 ml-auto mr-auto mt-10 " src="css/photo/vanphuctiendo.jpg" alt=""></div>
@@ -190,7 +232,7 @@
         <h2 class="uppercase ml-2 text-black font-semibold text-2xl text-center">Tin tức</h2>
         <div class="title-icon3 w-full h-10 mt-3"></div>
     </div>
-    <div class="flex">
+    <div class="md:flex">
         <div>
             <img src="css/photo/phongcanh4.jpg" alt="" class="px-20 py-10">
             <p class="px-20 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatem ea
@@ -219,21 +261,36 @@
             <div class="title-icon3 w-full h-10 mt-3"></div>
         </div>
         <div>
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/L3iJlV4ItiI"
-                class="ml-auto mr-auto mt-10" title="YouTube video player" frameborder="0"
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/L3iJlV4ItiI"
+                class="ml-auto mr-auto mt-10 md:w-1/3 md:h-500 " title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
+    </div>  
+    <div class="mt-20 h-700 relative p-10" style="background-image: url(css/photo/building-register-form.jpg);">
+        <div class="px-10  ">
+        <h1 class="text-white text-3xl uppercase ">Đăng ký tham quan dự án</h1>
+        <input type="text" placeholder="Họ và tên" class=" w-full h-12 px-5 rounded-lg mt-2 opacity-80"><br>
+
+        <input type="text" placeholder="Email" class=" w-full h-12  p-5 rounded-lg mt-2 opacity-80"><br>
+        <input type="text" placeholder="Số điện thoại" class=" w-full h-12 p-5 rounded-lg mt-2 opacity-80"><br>
+        <input type="number" placeholder="Số lượng" class=" w-full h-12 rounded-lg mt-2 p-5 opacity-80"><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Lời nhắn" class="mt-2 p-5 w-full opacity-80 rounded-lg"></textarea>
+        <button class="text-white uppercase rounded-lg w-full h-12 bg-green-400 opacity-80">Gửi</button>
     </div>
-    <div class="mt-20 w-full h-700 relative" style="background-image: url(css/photo/building-register-form.jpg);">
-        <h1 class="text-white text-3xl uppercase absolute header-form ">Đăng ký tham quan dự án</h1>
-        <input type="text" placeholder="Họ và tên" class="absolute w-80 h-12 input1">
-        <input type="text" placeholder="Email" class="absolute w-80 h-12 input2">
-        <input type="text" placeholder="Số điện thoại" class="absolute w-80 h-12 input3">
-        <input type="number" placeholder="Số lượng" class="absolute w-80 h-12 input4">
-        <textarea name="" id="text-area1" cols="30" rows="10" placeholder="Lời nhắn" class=""></textarea>
-        <button class="button1 text-white uppercase">Gửi</button>
     </div>
+
+
+    <script>
+        // Grab HTML Elements
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // Add Event Listeners
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
